@@ -1,0 +1,47 @@
+@MSTCCOPR;@MSTCCOPRSPV
+
+
+outDelimiter.AVAILABLE_MST.split("!@")[((Integer)globalMap.get("tLoop_1_CURRENT_VALUE"))]
+
+outDelimiter.AVAILABLE_MST
+
+mailx -a 'Content-Type: text/html' -s "Subject" adipratama.hr@gmail.com <index.html
+
+set mapreduce.map.memory.mb=10240;
+set mapreduce.reduce.memory.mb=10240;
+set mapreduce.map.java.opts=-Xmx10g;
+set mapreduce.reduce.java.opts=-Xmx10g;
+
+/*+ PARALLEL(6) */
+
+#!/bin/sh
+
+logs dir "hdfs://nameservice1/user/spark/applicationHistory"
+spark history address "10.22.11.154:18080"
+
+(
+echo "To: adipratama.hr@gmail.com"
+echo "Subject: hello"
+echo "Content-Type: text/html"
+echo
+echo "<html><b><font size='7'>H</font>ello</b></html>"
+echo
+) | /usr/sbin/sendmail -t
+
+
+mail -s "subject" adipratama.hr@gmail.com <index.html
+
+
+DM_DPK 119 DM_ANALYTICS
+DM_BANCA_AUM_DT_FULL_STATUS 2.9 EDM_SIMAS
+DM_BANCA_AUM_SUM_DT_FULL_STATUS Table tidak ditemukan
+DM_LOAN 99 DM_ANALYTICS
+DM_TRANSACTION 10 DM_ANALYTICS
+
+mongodb+srv://dbAdi:<password>@cluster0-grzyk.mongodb.net/test?retryWrites=true&w=majority
+
+
+mvn:org.talend.libraries/ojdbc7/6.0.0/jar
+
+
+select segment_name,owner,segment_type,round(sum(bytes/(1024*1024*1024)),2) as TABLE_SIZE from dba_segments where UPPER(segment_name) = UPPER('&table') group by segment_name,owner,segment_type;
